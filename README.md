@@ -2,7 +2,7 @@ Smartphone Dataset Cleaning & Recommendation System
 
 A Jupyter Notebook project demonstrating real-world data cleaning and a simple product recommendation system using a smartphone dataset (smartphones.csv). Learn how to handle messy data and create a searchable, clean dataset for analysis.
 
-🛠️ Features
+ Features
 
 Data Cleaning & Preprocessing
 
@@ -26,7 +26,7 @@ Simple text-based search function to find smartphones by model or keyword.
 
 Supports case-insensitive search and returns relevant product details.
 
-⚡ Workflow
+ Workflow
 
 Load the Dataset
 
@@ -52,7 +52,7 @@ Use Recommendation Function
 
 Search products by keyword using the recommend_products() function.
 
-💡 Recommendation Function
+Recommendation Function
 def recommend_products(keyword, df, column="model"):
     results = df[df[column].str.contains(keyword, case=False, na=False)]
     return results
@@ -67,8 +67,7 @@ Sample Output:
 
 model	price	rating	ram_gb	battery_mah	display_inches	os
 Samsung Galaxy S21	69999.0	4.3	8	4000	6.2	Android
-Samsung Galaxy A52	25999.0	4.1	6	4500	6.5	Android
-📂 Files
+Samsung Galaxy A52	25999.0	4.1	6	4500	6.5	Android Files
 
 smartphones.csv — Raw input dataset
 
